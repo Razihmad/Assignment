@@ -23,7 +23,7 @@ def marks(request):
             marks = Marks(RollNumber = rollnumber,first_name = first_name,last_name=last_name,Maths = math,Physics=physics,Chemistry=chemistry,Total = total,Percentage = percentage)
             marks.save()
             messages.success(request,"Marks has Been Added successfully")
-            return redirect("home")
+            return redirect("leaderboard")
 
     return render(request,'marks.html')
 

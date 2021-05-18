@@ -12,6 +12,8 @@
 
 {% block content %}
   <div class="c">
+    <h1 class="text-center" style="color: black;">Check Your Rank Here</h1>
+    <hr>
     <table id="table_id" class="display">
       <thead>
           <tr>
@@ -52,5 +54,11 @@
     $('#table_id')
       .DataTable();
   });
+
   </script>
+  {% for message in messages %}
+  <script>
+  alert("{{message}}")
+  </script>
+  {% endfor %}
 {% endblock content %}
