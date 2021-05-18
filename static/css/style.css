@@ -33,16 +33,16 @@ text-decoration: none;
 
 @keyframes glowing {
     0% {
-      background-color: #2ba805;
-      box-shadow: 0 0 3px #2ba805;
+      background-color: rgba(29, 26, 26, 0.822);
+      box-shadow: 0 0 3px rgb(95, 91, 91);
     }
     50% {
-      background-color: #49e819;
-      box-shadow: 0 0 10px #49e819;
+      background-color: rgb(41, 38, 38);
+      box-shadow: 0 0 10px rgb(26, 24, 24);
     }
     100% {
-      background-color: #2ba805;
-      box-shadow: 0 0 3px #2ba805;
+      background-color: rgb(19, 18, 18);
+      box-shadow: 0 0 3px rgb(17, 16, 16);
     }
   }
   
