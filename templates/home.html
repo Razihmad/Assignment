@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}
+  Home
+{% endblock title %}
+{% block css %}
+  <style>
+    body{
+      background: radial-gradient(#575757,#575346);
+    }
+  </style>
+{% endblock css %}
+{% block content %}
+  {% for message in messages  %}
+  <script>
+    alert('{{message}}')
+  </script>
+    
+  {% endfor %}
+<div class="home">
+<a href="/marks/" class="button">Enter Marks </a>
+<a href="/leaderboard/" class="button">LeaderBoard</a>
+</div>
+
+{% endblock content %}

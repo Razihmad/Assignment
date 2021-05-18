@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* home.html css */
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:20% ;
+}
+
+.home a{
+text-decoration: none;
+
+}
+.button{
+    margin-left: 20px;
+        background-color: #1c87c9;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #bb2d2d;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;   
+        animation: glowing 1300ms infinite;  
+}
+
+@keyframes glowing {
+    0% {
+      background-color: #2ba805;
+      box-shadow: 0 0 3px #2ba805;
+    }
+    50% {
+      background-color: #49e819;
+      box-shadow: 0 0 10px #49e819;
+    }
+    100% {
+      background-color: #2ba805;
+      box-shadow: 0 0 3px #2ba805;
+    }
+  }
+  
+/* marks.html css*/
+.regform{
+  background-color: rgb(0,0,0,0.6);
+  margin: auto;
+  color: #FFFFFF;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+  width: 800px;
+  height: 940px;
+
+}
+.main{
+  background-color: rgb(0,0,0,0.5);
+    width: 800px;
+    margin: auto;
+}
+form{
+  padding: 10px;
+}
+#name{
+  width: 100%;
+  height: 100px;
+}
+.name{
+  margin-left: 25px;
+  margin-top: 30px;
+  width: 125px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700
+}
+.first_name{
+  position: relative;
+  left: 160px;
+  top: -37px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0px 22px;
+  font-size: 16px;
+}
+
+.last_name{
+  position: relative;
+    left: 150px;
+    top: -37px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0px 22px;
+    font-size: 16px;
+    color: #555;
+}
+.firstlabel{
+  color: #d8c9c9;
+  
+}
+.lastlabel{
+  color: #d8c9c9;
+}
+.roll{
+  position: relative;
+  bottom:32px ;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0px 22px;
+  font-size: 16px;
+}
+.maths{
+  position: relative;
+  bottom: 40px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0px 22px;
+  font-size: 16px;
+  width:250px;
+
+}
+.physics{
+  position: relative;
+  bottom: 54px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0px 22px;
+  font-size: 16px;
+  width:250px;
+
+
+}
+.chemistry{
+  position: relative;
+  bottom: 54px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0px 22px;
+  font-size: 16px;
+  width:250px;
+}
+.total{
+  position: relative;
+  bottom: 42px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0px 22px;
+  font-size: 16px;
+
+}
+.percentage{
+  position: relative;
+  bottom: 40px;
+  line-height: 40px;
+  border-radius: 6px;
+  padding: 0px 22px;
+  font-size: 16px;
+}
+
+/*leaderboard.html css */
+.c{
+  position: relative;
+  top: 60px;
+  left: 300px;
+  width: 928px;
+  font-family: ui-monospace;
+  color: #1212f9
+  
+}

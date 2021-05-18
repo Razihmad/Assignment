@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}
+  Marks
+
+{% endblock title %}
+{% block css %}
+  <style>
+      body{
+          background-image: url('/static/images/image.jpg');
+          background-position: center;
+          background-size: cover;
+          font-family: sans-serif;
+          margin-top: 40px;
+      }
+  </style>
+{% endblock css %}
+{% block content %}
+ <div class="regform">
+     <h1>Register Marks Here</h1>
+     {% for message in  messages %}
+       <h6 class="info alert alert-danger">{{message}}</h6>
+     {% endfor %}
+     <div class="main">
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div id="name">
+            <h2 class="name">Name</h2>
+            <input type="text" class="first_name" name="first_name" required>
+            <label for="" class="firstlabel">First Name</label>
+            <input type="text" name="last_name" id="" class="last_name" required>
+            <label for="" class="lastlabel">Last Name</label>
+
+        </div>
+        <h2 class="name">Roll Number</h2>
+        <input type="text" name="roll" id="roll" class="roll" maxlength="8" minlength="8" required>
+        <h2 class="name">Marks In Maths </h2>
+        <input type="number" onkeyup="AddInputs()" name="maths" min="0" max="100" id="maths" class="maths s" required>
+        <h2 class="name">Marks In Physics</h2>
+        <input type="number" onkeyup="AddInputs()" name="physics" min="0" max="100" id="physics" class="physics s" required>
+        <h2 class="name">Marks In Chemistry</h2>
+        <input onkeyup="AddInputs()" type="number" name="chemistry" min="0" max="100" id="chemistry" class="chemistry s" required>
+        <h2 class="name">Total</h2>
+        <input type="number" name="total" id="total" class="total" readonly>
+        <h2 class="name">Percentage</h2>
+        <input type="number" name="percentage" id="percentage" class="percentage" readonly>
+        <br>
+        <input type="submit" class="btn btn-primary" value="Get Result">
+
+
+    </form>         
+     </div>
+ </div>
+
+{% endblock content %}

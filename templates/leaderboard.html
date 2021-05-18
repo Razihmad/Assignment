@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}
+  LeaderBoard
+{% endblock title %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+<style>
+  body{
+    background: radial-gradient(#47b0591c, #2966964d);  }
+</style>
+{% endblock css %}
+
+{% block content %}
+  <div class="c">
+    <table id="table_id" class="display">
+      <thead>
+          <tr>
+            <th>Rank</th>
+              <th>First Name </th>
+              <th>Last Name</th>
+              <th>Roll Number</th>
+              <th>Maths</th>
+              <th>Physics</th>
+              <th>Chemistry</th>
+              <th>Total</th>
+              <th>Percentage</th>
+              <!-- <th>Rank</th> -->
+          </tr>
+      </thead>
+      <tbody>
+          {% for d in data  %}
+            <tr>
+              <td>{{d.1}}</td>
+              <td>{{d.0.first_name}}</td>
+              <td>{{d.0.last_name}}</td>
+              <td>{{d.0.RollNumber}}</td>
+              <td>{{d.0.Maths}}</td>
+              <td>{{d.0.Physics}}</td>
+              <td>{{d.0.Chemistry}}</td>
+              <td>{{d.0.Total}}</td>
+              <td>{{d.0.Percentage}}</td>
+            </tr>
+          {% endfor %}
+      </tbody>
+  </table>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+  <script>
+    $(document)
+  .ready(function () {
+    $('#table_id')
+      .DataTable();
+  });
+  </script>
+{% endblock content %}
