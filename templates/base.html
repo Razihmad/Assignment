@@ -15,10 +15,19 @@
       
     {% endblock css %}
 </head>
-<body>
+<body onload="myfunction()">
+    <div id="l"></div>
     {% block content %}
       
     {% endblock content %}
     <script src="{% static 'js/home.js' %}"></script>
+    <script>
+        var preloader = document.getElementById('l')
+        function myfunction(){
+            preloader.style.display = 'none';
+            return
+        }
+    </script>
+
 </body>
 </html>
