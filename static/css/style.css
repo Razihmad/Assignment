@@ -213,3 +213,10 @@ width: 300px;
   font-family: 'Newsreader', serif;
   
 }
+
+/* media query */
+@media screen and (max-width:5400px){
+  {
+    
+  }
+}

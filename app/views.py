@@ -15,11 +15,15 @@ def marks(request):
         physics = float(request.POST.get('physics'))
         chemistry = float(request.POST.get('chemistry'))
         total = float(request.POST.get('total'))
-        percentage = float(request.POST.get('percentage'))
+        percentage = round(float(request.POST.get('percentage')),3)
         if Marks.objects.filter(RollNumber=rollnumber):
             messages.info(request,"This Student Has Already Been Added")
             return redirect('marks')
         else:
+            if not (first_name.isalpha() and last_name.isalpha()):
+                messages.info(request,"Please Enter A Valid Name")
+                return redirect('marks')
+            
             marks = Marks(RollNumber = rollnumber,first_name = first_name,last_name=last_name,Maths = math,Physics=physics,Chemistry=chemistry,Total = total,Percentage = percentage)
             marks.save()
             messages.success(request,"Marks has Been Added successfully")
@@ -28,7 +32,6 @@ def marks(request):
     return render(request,'marks.html')
 
 def leaderboard(request):
-
     l = list(Marks.objects.order_by('Percentage')[::-1])
     ind = [i for i in range(1,len(l) +1 )]
     data = list(zip(l,ind)) 

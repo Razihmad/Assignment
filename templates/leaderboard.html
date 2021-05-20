@@ -26,26 +26,29 @@
               <th>Chemistry</th>
               <th>Total</th>
               <th>Percentage</th>
-              <!-- <th>Rank</th> -->
           </tr>
       </thead>
       <tbody>
+      
+
           {% for d in data  %}
-            <tr>
-              <td>{{d.1}}</td>
-              <td>{{d.0.first_name}}</td>
-              <td>{{d.0.last_name}}</td>
-              <td>{{d.0.RollNumber}}</td>
-              <td>{{d.0.Maths}}</td>
-              <td>{{d.0.Physics}}</td>
-              <td>{{d.0.Chemistry}}</td>
-              <td>{{d.0.Total}}</td>
-              <td>{{d.0.Percentage}}</td>
-            </tr>
+            
+          <tr>
+            <td>{{d.1}}</td>
+            <td>{{d.0.first_name}}</td>
+            <td>{{d.0.last_name}}</td>
+            <td>{{d.0.RollNumber}}</td>
+            <td>{{d.0.Maths}}</td>
+            <td>{{d.0.Physics}}</td>
+            <td>{{d.0.Chemistry}}</td>
+            <td>{{d.0.Total}}</td>
+            <td>{{d.0.Percentage}}</td>
+          </tr>
           {% endfor %}
-      </tbody>
+          </tbody>
   </table>
-  </div>
+</div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
   <script>
@@ -54,7 +57,6 @@
     $('#table_id')
       .DataTable();
   });
-
   </script>
   {% for message in messages %}
   <script>

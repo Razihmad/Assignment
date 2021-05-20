@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% block title %}
   Marks
-
 {% endblock title %}
 {% block css %}
   <style>
@@ -9,6 +8,7 @@
           background-image: url('/static/images/back.jpg');
           background-position: center;
           background-size: cover;
+          background-repeat: no-repeat;
           font-family: sans-serif;
       }
   </style>
@@ -44,8 +44,6 @@
         <input type="number" name="percentage" id="percentage" class="percentage" readonly>
         <br>
         <input type="submit" class="btn btn-primary" value="Get Result">
-
-
     </form>         
      </div>
  </div>
