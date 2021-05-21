@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Marks(models.Model):
-    RollNumber = models.CharField(max_length=20)
+    RollNumber = models.CharField(max_length=8)
     first_name = models.CharField(max_length=200)
     last_name = models.CharField(max_length=200)
     Maths = models.IntegerField()

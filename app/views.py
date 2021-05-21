@@ -20,7 +20,7 @@ def marks(request):
             messages.info(request,"This Student Has Already Been Added")
             return redirect('marks')
         else:
-            if not (first_name.isalpha() and last_name.isalpha()):
+            if not (first_name.isalpha() and last_name.isalpha() and rollnumber.isalnum()):
                 messages.info(request,"Please Enter A Valid Name")
                 return redirect('marks')
             
