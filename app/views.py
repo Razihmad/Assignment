@@ -11,7 +11,7 @@ def marks(request):
         rollnumber = request.POST.get('roll')
         first_name = request.POST.get('first_name')
         last_name = request.POST.get('last_name')
-        math = float(request.POST.get('maths'))
+        math = request.POST.get('maths')
         physics = float(request.POST.get('physics'))
         chemistry = float(request.POST.get('chemistry'))
         total = float(request.POST.get('total'))
@@ -23,7 +23,6 @@ def marks(request):
             if not (first_name.isalpha() and last_name.isalpha() and rollnumber.isalnum()):
                 messages.info(request,"Please Enter A Valid Name")
                 return redirect('marks')
-            
             marks = Marks(RollNumber = rollnumber,first_name = first_name,last_name=last_name,Maths = math,Physics=physics,Chemistry=chemistry,Total = total,Percentage = percentage)
             marks.save()
             messages.success(request,"Marks has Been Added successfully")

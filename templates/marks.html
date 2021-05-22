@@ -6,7 +6,7 @@
 {% block css %}
   <style>
     body{
-      background: url('/static/images/img.jpeg');
+      background: url('/static/images/was.jpeg');
     }
   </style>
 {% endblock css %}
@@ -26,15 +26,15 @@
       <span><input type="text" name="roll" id="roll"placeholder = "Enter Roll Number" minlength="8" maxlength="8" required></span>
       <span><h3 class="name two">Roll Number</h3></span>
 
-      <span><input type="number" onkeyup="AddInputs()" name="maths" id="maths"placeholder = "Enter Maths's Marks" class="s" required></span>
+      <span><input type="number" onkeyup="AddInputs()" name="maths" id="maths"placeholder = "Enter Maths's Marks" class="s" value="0" equired></span>
       <span><h3 class="name three">Maths</h3></span>
 
     </div>
     <div id="pc">
-      <span><input type="number" onkeyup="AddInputs()" name="physics" id="physics"placeholder = "Enter Physics's Marks" class="s" required></span>
+      <span><input type="number" onkeyup="AddInputs()" name="physics" id="physics"placeholder = "Enter Physics's Marks" class="s" value="0" required></span>
       <span><h3 class="name four">Physics</h3></label>
       </span>
-      <span><input type="number" onkeyup="AddInputs()" name="chemistry" id="chemistry"placeholder = "Enter Chemistry' Marks" class="s" required></span>
+      <span><input type="number" onkeyup="AddInputs()" name="chemistry" id="chemistry"placeholder = "Enter Chemistry' Marks" class="s" value="0" required></span>
       <span><h3 class="name five">Chemistry</h3></span>
     </div>
     <div id="tp">
@@ -44,7 +44,7 @@
       <span><h4 class="name seven">Percentage(%)</h4></span>
     </div>
     <!-- <br> -->
-    <input type="submit" name="" id="b" value="Get Result">
+    <input type="submit" name="" id="b" value="GET RESULT">
      </form>
    </div>
  </div>
