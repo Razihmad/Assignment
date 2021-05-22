@@ -31,8 +31,9 @@ def marks(request):
     return render(request,'marks.html')
 
 def leaderboard(request):
+    last = Marks.objects.all().last()
     l = list(Marks.objects.order_by('Percentage')[::-1])
     ind = [i for i in range(1,len(l) +1 )]
     data = list(zip(l,ind)) 
-    return render(request, 'leaderboard.html',{'data':data})
+    return render(request, 'leaderboard.html',{'data':data,'last':last})
     

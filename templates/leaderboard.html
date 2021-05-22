@@ -14,7 +14,7 @@
 
 {% block content %}
   <div class="c">
-    <h1 class="text-center" style="color: black;">Check Your Rank Here</h1>
+    <h1 class="text-center" style="color: black; font-family:Verdana, Geneva, Tahoma, sans-serif;">Check Your Rank Here</h1>
     <hr>
     <table id="table_id" class="display">
       <thead>
@@ -34,18 +34,30 @@
       
 
           {% for d in data  %}
-            
-          <tr>
-            <td>{{d.1}}</td>
-            <td>{{d.0.first_name}}</td>
-            <td>{{d.0.last_name}}</td>
-            <td>{{d.0.RollNumber}}</td>
-            <td>{{d.0.Maths}}</td>
-            <td>{{d.0.Physics}}</td>
-            <td>{{d.0.Chemistry}}</td>
-            <td>{{d.0.Total}}</td>
-            <td>{{d.0.Percentage}}</td>
-          </tr>
+            {% if d.0 == last %}
+              <tr style="background-color:#FE6700; color:white;">
+                <td style="background-color:#FE6700;">{{d.1}}</td>
+                <td>{{d.0.first_name}}</td>
+                <td>{{d.0.last_name}}</td>
+                <td>{{d.0.RollNumber}}</td>
+                <td>{{d.0.Maths}}</td>
+                <td>{{d.0.Physics}}</td>
+                <td>{{d.0.Chemistry}}</td>
+                <td>{{d.0.Total}}</td>
+                <td>{{d.0.Percentage}}</td>              </tr>
+               {% else %} 
+                <tr>
+                  <td>{{d.1}}</td>
+                  <td>{{d.0.first_name}}</td>
+                  <td>{{d.0.last_name}}</td>
+                  <td>{{d.0.RollNumber}}</td>
+                  <td>{{d.0.Maths}}</td>
+                  <td>{{d.0.Physics}}</td>
+                  <td>{{d.0.Chemistry}}</td>
+                  <td>{{d.0.Total}}</td>
+                  <td>{{d.0.Percentage}}</td>
+                </tr>
+                {% endif %}
           {% endfor %}
           </tbody>
   </table>

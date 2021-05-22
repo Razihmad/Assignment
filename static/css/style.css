@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;}
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
 #l{
   position: fixed;
   width: 100%;
@@ -15,150 +15,171 @@
 .home{
     display: flex;
     flex-direction: row;
+    height: 100vh;
     justify-content: center;
-    /* margin-top:20% ; */
+    align-items: center;
 }
 
 .home a{
 text-decoration: none;
-color: white;
+color: #fff;
+}
+.a{
+  text-align: center;
+  background-color: #010223f0;
+ 
+}
+.marks{
+  margin-right: 25px;
+    border-radius: 6px;
+    height: 44px;
+    width: 151px;
+  
 
 }
-.button{
-  position: relative;
-  top: 300px;
-    margin-left: 20px;
-        background-color: #1c87c9;
-        -webkit-border-radius: 60px;
-        border-radius: 60px;
-        border: none;
-        color: #bb2d2d;
-        cursor: pointer;
-        display: inline-block;
-        font-family: sans-serif;
-        font-size: 20px;
-        padding: 10px 10px;
-        text-align: center;
-        text-decoration: none;   
-        animation: glowing 1300ms infinite;  
+.lead{
+  /* margin-right: 25px; */
+    border-radius: 6px;
+    height: 44px;
+    width: 190px;
 }
 
-@keyframes glowing {
-    0% {
-      background-color: rgb(104, 94, 94);
-      box-shadow: 0 0 3px rgb(235, 209, 209);
-    }
-    50% {
-      background-color: rgb(245, 158, 158);
-      box-shadow: 0 0 10px rgb(201, 134, 134);
-    }
-    100% {
-      background-color: rgb(199, 97, 97);
-      box-shadow: 0 0 3px rgb(228, 131, 131);
-    }
-  }
+
+.a:hover{
+  background: rgb(39, 223, 146);
+  color: red;
+}
+
   
 /* marks.html css*/
+.form #heading{
+  text-align: center;
+}
 .name{
   display: inline;
   position: relative;
 }
 .form{
   position: relative;
-  top:113px;
+  top: 113px;
   padding-top: 20px;
-  padding-left: 7px;
-  margin-left: 24%;
-  background: #1d1f59eb;
+  padding-left: 26px;
+  margin-left: 22%;
+  background: #010223f0;
   width: auto;
-  width: 947px;
+  width: 716px;
   border-radius: 10px;
   color: #fff;
-  left: 190px;
+  left: 368px;
+  text-align: center;
 }
+
 form{
   line-height: 90px;
 }
 #last_name{
   position: relative;
-    left: 325px;
+  left: -12px;
+  top: 50px;
+}
+.last{
+  position: relative;
+  bottom: 52px;
+  left: 101px;
 }
 #first_name{
   position: relative;
-    left: 119px;
+  right: 142px;
+  top: 50px;
 }
-.first_name{
-  
-  position: relative;
-  top: 35px;
-  right: 40px;
+
+#roll{
+left: 12px;
+top: 27px;
+}
+
+.one{
+ 
+  left: -23px;
+  bottom: -7px;
 
 }
-.last_name{
-  position: relative;
-  top: 35px;
-  left: 70px;
-}
-#roll{
-  left: 199px;
+.x{
+  bottom: 18px;
+    right: 192px;
 }
 .two{
-right: 262px;
+right: 224px;
+bottom: 11px;
 }
 #maths{
-left: 244px;
+left: 14px;
+top: 27px;
 }
 .three{
-right: 193px;
+right: 224px;
+bottom: 11px;
 }
 #physics{
-  left: 199px;
+  left: 12px;
+  top: 29px;
 }
 .four{
-  right: 262px;
-
+  right: 222px;
+bottom: 7px;
 }
 #chemistry{
-  left: 304px;
+  left: 60px;
+  top:29px ;
 
 }
 .five{
-  right: 133px;
-
+  right: 176px;
+bottom: 7px;
 }
 #total{
-  left: 199px;
+  left: 21px;
+  top: 31px;
+
 }
 .six{
-right: 263px;
+  right: 220px;
+bottom: 7px;
 }
 #percentage{
-  left: 342px;
-}
-.seven{
-  right: 93px;
+  left: 98px;
+  top: 34px;
 }
 
-.form h1{
-  text-align: center;
-  color: #fff;
+.seven{
+  right: 142px;
+  /* top: 29px; */
+bottom: 7px;
 }
+
+
 input{
-  width: 260px;
+  width: 235px;
   border-radius: 8px;
-  line-height: 42px;
+  line-height: 35px;
   position: relative;
   padding-left: 10px;
 }
 #b{
-  width: 150px;
-  margin-left: 409px;
+  width: 180px;
+  margin-left: -13px;
+  margin-top: 38px;
   font-weight: bold;
   font-size: 17px;
   text-align: center;
   color: black;
   background: #E7DED5;
   padding-right: 11px;
+  border-radius: 5px;
+}
+#b:hover{
+  background:#fff;
+  color: blue;
 }
 
 

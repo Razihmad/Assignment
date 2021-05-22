@@ -6,45 +6,47 @@
 {% block css %}
   <style>
     body{
-      background: url('/static/images/was.jpeg');
+      background: url('/static/images/bg.jpeg');
     }
   </style>
 {% endblock css %}
 {% block content %}
 
  <div class="form">
-   <h1>Register your Marks Here</h1>
+   <h2 id="heading">Input Your Information</h2>
    <div class="main">
      <form action="" method="POST">
        {% csrf_token %}
        <div id="name">
-       <span><h3 class="name one">Name</h3></span>
-      <span><input type="" name="first_name" id="first_name" placeholder="Enter First Name" required>
-      <span><input type="text" name="last_name" id="last_name" placeholder="Enter Last Name" required> 
+       <span><h5 class="name one">First Name</h5></span>
+      <span><input type="" name="first_name" id="first_name" placeholder="Enter First Name" required> </span>
+      <span><input type="text" name="last_name" id="last_name" placeholder="Enter Last Name" required> </span>
+      <!-- <span><h5 class="name x">Last Name</h5></span> -->
+      <span><h5 class="last">Last Name</h5></span>
     </div>
     <div id="rm">
       <span><input type="text" name="roll" id="roll"placeholder = "Enter Roll Number" minlength="8" maxlength="8" required></span>
-      <span><h3 class="name two">Roll Number</h3></span>
+      <span><h5 class="name two">Roll Number</h5></span>
 
       <span><input type="number" onkeyup="AddInputs()" name="maths" id="maths"placeholder = "Enter Maths's Marks" class="s" value="0" equired></span>
-      <span><h3 class="name three">Maths</h3></span>
+      <span><h5 class="name three">Maths</h5></span>
 
     </div>
     <div id="pc">
       <span><input type="number" onkeyup="AddInputs()" name="physics" id="physics"placeholder = "Enter Physics's Marks" class="s" value="0" required></span>
-      <span><h3 class="name four">Physics</h3></label>
+      <span><h5 class="name four">Physics</h5></label>
       </span>
       <span><input type="number" onkeyup="AddInputs()" name="chemistry" id="chemistry"placeholder = "Enter Chemistry' Marks" class="s" value="0" required></span>
-      <span><h3 class="name five">Chemistry</h3></span>
+      <span><h5 class="name five">Chemistry</h5></span>
     </div>
     <div id="tp">
       <span><input type="text" name="total" id="total" readonly></span>
-      <span><h3 class="name six">Total</h3></span>
+      <span><h5 class="name six">Total</h5></span>
       <span><input type="text" name="percentage" id="percentage" readonly></span>
-      <span><h4 class="name seven">Percentage(%)</h4></span>
+      <span><h5 class="name seven">Percentage(%)</h5></span>
     </div>
     <!-- <br> -->
-    <input type="submit" name="" id="b" value="GET RESULT">
+    <input type="submit" name="" id="b" value="GET YOUR RANK">
      </form>
    </div>
  </div>

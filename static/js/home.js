@@ -8,5 +8,7 @@ function AddInputs()
         total += parseInt(ele.value);
     }
     document.getElementsByName('total')[0].value = total.toString();
-    document.getElementsByName('percentage')[0].value = (total/3).toString();
+    var t = total/3;
+    var x = t.toFixed(2)
+    document.getElementsByName('percentage')[0].value =x.toString() ;
 }
