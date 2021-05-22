@@ -1,7 +1,8 @@
 *{
     padding: 0;
     margin: 0;
-}
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;}
 #l{
   position: fixed;
   width: 100%;
@@ -58,151 +59,108 @@ color: white;
   }
   
 /* marks.html css*/
-.regform{
-  background-color: rgb(0,0,0,0.6);
-  margin: auto;
-  color: #FFFFFF;
-  padding: 10px 0px 10px 0px;
-  text-align: center;
-  border-radius: 15px 15px 0px 0px;
-  width: 800px;
-  height: 940px;
-  font-family: 'Newsreader', serif;;
-
+.name{
+  display: inline;
+  position: relative;
 }
-.main{
-  background-color: rgb(0,0,0,0.5);
-    width: 800px;
-    margin: auto;
+.form{
+  position: relative;
+  top: 22px;
+  padding-top: 20px;
+  padding-left: 7px;
+  margin-left: 24%;
+  background: #110f0b85;
+  width: auto;
+  width: 947px;
+  border-radius: 10px;
+  color: #fff;
 }
 form{
-  padding: 10px;
+  line-height: 90px;
 }
-
-#name{
-  width: 100%;
-  height: 100px;
+#last_name{
+  position: relative;
+    left: 325px;
 }
-.name{
-  margin-left: 25px;
-  margin-top: 30px;
-  width: 125px;
-  color: white;
-  font-size: 18px;
-  font-weight: 700
+#first_name{
+  position: relative;
+    left: 119px;
 }
 .first_name{
+  
   position: relative;
-  left: 160px;
-  top: -37px;
-  line-height: 40px;
-  border-radius: 6px;
-  padding: 0px 22px;
-  font-size: 16px;
-  width: 250px;
-}
+  top: 35px;
+  right: 40px;
 
+}
 .last_name{
   position: relative;
-    left: 150px;
-    top: -37px;
-    line-height: 40px;
-    border-radius: 6px;
-    padding: 0px 22px;
-    font-size: 16px;
-    color: #555;
-    width: 250px;
+  top: 35px;
+  left: 70px;
 }
-h2:nth-child(1){
-  margin-left: -33px;
+#roll{
+  left: 199px;
+}
+.two{
+right: 262px;
+}
+#maths{
+left: 244px;
+}
+.three{
+right: 193px;
+}
+#physics{
+  left: 199px;
+}
+.four{
+  right: 262px;
+
+}
+#chemistry{
+  left: 304px;
+
+}
+.five{
+  right: 133px;
+
+}
+#total{
+  left: 199px;
+}
+.six{
+right: 263px;
+}
+#percentage{
+  left: 342px;
+}
+.seven{
+  right: 93px;
 }
 
-h2:nth-child(3){
-  margin-left: -7px;
+.form h1{
+  text-align: center;
+  color: #fff;
 }
-
-h2:nth-child(5){
-  margin-left: -31px;
-
-}
-h2:nth-child(7){
-margin-left: -23px;
-}
-h2:nth-child(9){
-  margin-left: -15px;
-}
-h2:nth-child(11){
-  margin-left:-36px ;
-}
-h2:nth-child(13){
-margin-left: 1px;
-}
-.firstlabel{
-  color: #d8c9c9;
-  
-}
-.lastlabel{
-  color: #d8c9c9;
-}
-.roll{
+input{
+  width: 260px;
+  border-radius: 8px;
+  line-height: 42px;
   position: relative;
-  bottom:32px ;
-  line-height: 40px;
-  border-radius: 6px;
-  padding: 0px 22px;
-  font-size: 16px;
-  width: 300px;
+  padding-left: 10px;
 }
-.maths{
-  position: relative;
-  bottom: 40px;
-  line-height: 40px;
-  border-radius: 6px;
-  padding: 0px 22px;
-  font-size: 16px;
-  width:300px;
-
-}
-.physics{
-  position: relative;
-  bottom: 54px;
-  line-height: 40px;
-  border-radius: 6px;
-  padding: 0px 22px;
-  font-size: 16px;
-  width:300px;
-
-
-}
-.chemistry{
-  position: relative;
-  bottom: 54px;
-  line-height: 40px;
-  border-radius: 6px;
-  padding: 0px 22px;
-  font-size: 16px;
-  width:300px;
-}
-.total{
-  position: relative;
-  bottom: 42px;
-  line-height: 40px;
-  border-radius: 6px;
-  padding: 0px 22px;
-  font-size: 16px;
-width: 300px;
-}
-.percentage{
-  position: relative;
-  bottom: 40px;
-  line-height: 40px;
-  border-radius: 6px;
-  padding: 0px 22px;
-  font-size: 16px;
-  width: 300px;
+#b{
+  width: 120px;
+  margin-left: 409px;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  color: black;
+  background: #2b8f0c;
+  padding-right: 4px;
 }
 
-/*leaderboard.html css */
+
 .c{
   position: relative;
   top: 60px;

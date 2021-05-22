@@ -1,51 +1,53 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}
   Marks
 {% endblock title %}
 {% block css %}
   <style>
-      body{
-          background-image: url('/static/images/back.jpg');
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          font-family: sans-serif;
-      }
+    body{
+      background: url('/static/images/img.jpeg');
+    }
   </style>
 {% endblock css %}
 {% block content %}
- <div class="regform">
-     <h1>Register Marks Here</h1>
-     {% for message in  messages %}
-       <h6 class="info alert alert-danger">{{message}}</h6>
-     {% endfor %}
-     <div class="main">
-    <form action="" method="POST">
-        {% csrf_token %}
-        <div id="name">
-            <h2 class="name">Name</h2>
-            <input type="text" class="first_name" name="first_name" required>
-            <label for="" class="firstlabel">First Name</label>
-            <input type="text" name="last_name" id="" class="last_name" required>
-            <label for="" class="lastlabel">Last Name</label>
 
-        </div>
-        <h2 class="name">Roll Number</h2>
-        <input type="text" name="roll" id="roll" class="roll" maxlength="8" minlength="8" required>
-        <h2 class="name">Maths</h2>
-        <input type="number" onkeyup="AddInputs()" name="maths" min="0" max="100" id="maths" class="maths s" required>
-        <h2 class="name">Physics</h2>
-        <input type="number" onkeyup="AddInputs()" name="physics" min="0" max="100" id="physics" class="physics s" required>
-        <h2 class="name">Chemistry</h2>
-        <input onkeyup="AddInputs()" type="number" name="chemistry" min="0" max="100" id="chemistry" class="chemistry s" required>
-        <h2 class="name">Total</h2>
-        <input type="number" name="total" id="total" class="total" readonly>
-        <h2 class="name">Percentage(%)</h2>
-        <input type="number" name="percentage" id="percentage" class="percentage" readonly>
-        <br>
-        <input type="submit" class="btn btn-primary" value="Get Result">
-    </form>         
-     </div>
+ <div class="form">
+   <h1>Register your Marks Here</h1>
+   <div class="main">
+     <form action="" method="POST">
+       {% csrf_token %}
+       <div id="name">
+       <span><h3 class="name one">Name</h3></span>
+      <span><input type="" name="first_name" id="first_name" placeholder="Enter First Name" required>
+      <span><input type="text" name="last_name" id="last_name" placeholder="Enter Last Name" required> 
+    </div>
+    <div id="rm">
+      <span><input type="text" name="roll" id="roll"placeholder = "Enter Roll Number" minlength="8" maxlength="8" required></span>
+      <span><h3 class="name two">Roll Number</h3></span>
+
+      <span><input type="number" onkeyup="AddInputs()" name="maths" id="maths"placeholder = "Enter Maths's Marks" class="s" required></span>
+      <span><h3 class="name three">Maths</h3></span>
+
+    </div>
+    <div id="pc">
+      <span><input type="number" onkeyup="AddInputs()" name="physics" id="physics"placeholder = "Enter Physics's Marks" class="s" required></span>
+      <span><h3 class="name four">Physics</h3></label>
+      </span>
+      <span><input type="number" onkeyup="AddInputs()" name="chemistry" id="chemistry"placeholder = "Enter Chemistry' Marks" class="s" required></span>
+      <span><h3 class="name five">Chemistry</h3></span>
+    </div>
+    <div id="tp">
+      <span><input type="text" name="total" id="total" readonly></span>
+      <span><h3 class="name six">Total</h3></span>
+      <span><input type="text" name="percentage" id="percentage" readonly></span>
+      <span><h4 class="name seven">Percentage(%)</h4></span>
+    </div>
+    <!-- <br> -->
+    <input type="submit" name="" id="b" value="Get Result">
+     </form>
+   </div>
  </div>
+
 
 {% endblock content %}
